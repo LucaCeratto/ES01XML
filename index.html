@@ -2,14 +2,35 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Es</title>
-
-    <link rel="stylesheet" href="style.css" />
-
+    <title>Biblioteca XML</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/dati.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
 <body>
-        <div id="container">
+<h2>Biblioteca (XML)</h2>
+<div id="tabella-container"></div>
+<div id="paginazione">
+    <button id="prevBtn">&lt; Precedente</button>
+    <span id="paginaCorrente"></span>
+    <button id="nextBtn">Successivo &gt;</button>
+</div>
 
+<div id="modifica-container">
+    <form id="modifica-form">
+        <h3>Modifica libro</h3>
+        <label>Titolo: <input name="titolo" required></label>
+        <label>Autore: <input name="autore" required></label>
+        <label>Anno: <input name="anno" type="number" required></label>
+        <label>Genere: <input name="genere" required></label>
+        <label>Editore: <input name="editore" required></label>
+        <label>ISBN: <input name="isbn" required></label>
+        <label>Scaffale: <input name="scaffale" required></label>
+        <div class="actions">
+            <button type="submit">Salva</button>
+            <button type="button" id="annullaBtn">Annulla</button>
         </div>
+    </form>
+</div>
 </body>
 </html>
